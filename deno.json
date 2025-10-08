@@ -24,6 +24,7 @@
   ],
   "imports": {
     "@deno/kv-oauth": "jsr:@deno/kv-oauth@^0.11.0",
+    "@headlessui/react": "npm:@headlessui/react@^2.2.9",
     "@preact/signals": "npm:@preact/signals@^2.3.1",
     "@std/http": "jsr:@std/http@^1.0.21",
     "oauthio": "npm:oauthio@^0.3.5",

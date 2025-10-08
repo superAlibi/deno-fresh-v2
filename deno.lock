@@ -45,9 +45,11 @@
     "jsr:@std/uuid@^1.0.7": "1.0.9",
     "npm:@babel/core@^7.28.0": "7.28.4",
     "npm:@babel/preset-react@^7.27.1": "7.27.1_@babel+core@7.28.4",
+    "npm:@headlessui/react@^2.2.9": "2.2.9_react@19.2.0_react-dom@19.2.0__react@19.2.0",
     "npm:@mjackson/node-fetch-server@0.7": "0.7.0",
     "npm:@opentelemetry/api@^1.9.0": "1.9.0",
     "npm:@preact/signals@^2.2.1": "2.3.2_preact@10.27.2",
+    "npm:@preact/signals@^2.3.1": "2.3.2_preact@10.27.2",
     "npm:@prefresh/vite@^2.4.8": "2.4.10_preact@10.27.2_vite@7.1.9__picomatch@4.0.3",
     "npm:@tailwindcss/vite@^4.1.12": "4.1.14_vite@7.1.9__picomatch@4.0.3",
     "npm:daisyui@^5.1.28": "5.1.28",
@@ -57,6 +59,7 @@
     "npm:oauthio@~0.3.5": "0.3.5",
     "npm:preact-render-to-string@^6.5.11": "6.6.2_preact@10.27.2",
     "npm:preact@^10.27.0": "10.27.2",
+    "npm:preact@^10.27.2": "10.27.2",
     "npm:react-icons@^5.5.0": "5.5.0_react@19.2.0",
     "npm:tailwindcss@^4.1.10": "4.1.14",
     "npm:vite@7.1.9": "7.1.9_picomatch@4.0.3",
@@ -102,11 +105,11 @@
         "jsr:@std/semver",
         "jsr:@std/uuid",
         "npm:@opentelemetry/api",
-        "npm:@preact/signals",
+        "npm:@preact/signals@^2.2.1",
         "npm:esbuild",
         "npm:esbuild-wasm",
-        "npm:preact",
-        "npm:preact-render-to-string"
+        "npm:preact-render-to-string",
+        "npm:preact@^10.27.0"
       ]
     },
     "@fresh/plugin-vite@1.0.4": {
@@ -760,6 +763,58 @@
       "cpu": ["x64"],
       "tarball": "https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.25.7.tgz"
     },
+    "@floating-ui/core@1.6.5": {
+      "integrity": "sha512-8GrTWmoFhm5BsMZOTHeGD2/0FLKLQQHvO/ZmQga4tKempYRLz8aqJGqXVuQgisnMObq2YZ2SgkwctN1LOOxcqA==",
+      "dependencies": [
+        "@floating-ui/utils"
+      ],
+      "tarball": "https://registry.npmmirror.com/@floating-ui/core/-/core-1.6.5.tgz"
+    },
+    "@floating-ui/dom@1.6.8": {
+      "integrity": "sha512-kx62rP19VZ767Q653wsP1XZCGIirkE09E0QUGNYTM/ttbbQHqcGPdSfWFxUyyNLc/W6aoJRBajOSXhP6GXjC0Q==",
+      "dependencies": [
+        "@floating-ui/core",
+        "@floating-ui/utils"
+      ],
+      "tarball": "https://registry.npmmirror.com/@floating-ui/dom/-/dom-1.6.8.tgz"
+    },
+    "@floating-ui/react-dom@2.1.1_react@19.2.0_react-dom@19.2.0__react@19.2.0": {
+      "integrity": "sha512-4h84MJt3CHrtG18mGsXuLCHMrug49d7DFkU0RMIyshRveBeyV2hmV/pDaF2Uxtu8kgq5r46llp5E5FQiR0K2Yg==",
+      "dependencies": [
+        "@floating-ui/dom",
+        "react",
+        "react-dom"
+      ],
+      "tarball": "https://registry.npmmirror.com/@floating-ui/react-dom/-/react-dom-2.1.1.tgz"
+    },
+    "@floating-ui/react@0.26.20_react@19.2.0_react-dom@19.2.0__react@19.2.0": {
+      "integrity": "sha512-RixKJJG92fcIsVoqrFr4Onpzh7hlOx4U7NV4aLhMLmtvjZ5oTB/WzXaANYUZATKqXvvW7t9sCxtzejip26N5Ag==",
+      "dependencies": [
+        "@floating-ui/react-dom",
+        "@floating-ui/utils",
+        "react",
+        "react-dom",
+        "tabbable"
+      ],
+      "tarball": "https://registry.npmmirror.com/@floating-ui/react/-/react-0.26.20.tgz"
+    },
+    "@floating-ui/utils@0.2.5": {
+      "integrity": "sha512-sTcG+QZ6fdEUObICavU+aB3Mp8HY4n14wYHdxK4fXjPmv3PXZZeY5RaguJmGyeH/CJQhX3fqKUtS4qc1LoHwhQ==",
+      "tarball": "https://registry.npmmirror.com/@floating-ui/utils/-/utils-0.2.5.tgz"
+    },
+    "@headlessui/react@2.2.9_react@19.2.0_react-dom@19.2.0__react@19.2.0": {
+      "integrity": "sha512-Mb+Un58gwBn0/yWZfyrCh0TJyurtT+dETj7YHleylHk5od3dv2XqETPGWMyQ5/7sYN7oWdyM1u9MvC0OC8UmzQ==",
+      "dependencies": [
+        "@floating-ui/react",
+        "@react-aria/focus",
+        "@react-aria/interactions",
+        "@tanstack/react-virtual",
+        "react",
+        "react-dom",
+        "use-sync-external-store"
+      ],
+      "tarball": "https://registry.npmmirror.com/@headlessui/react/-/react-2.2.9.tgz"
+    },
     "@isaacs/fs-minipass@4.0.1": {
       "integrity": "sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==",
       "dependencies": [
@@ -846,6 +901,76 @@
         "vite"
       ],
       "tarball": "https://registry.npmmirror.com/@prefresh/vite/-/vite-2.4.10.tgz"
+    },
+    "@react-aria/focus@3.21.2_react@19.2.0_react-dom@19.2.0__react@19.2.0": {
+      "integrity": "sha512-JWaCR7wJVggj+ldmM/cb/DXFg47CXR55lznJhZBh4XVqJjMKwaOOqpT5vNN7kpC1wUpXicGNuDnJDN1S/+6dhQ==",
+      "dependencies": [
+        "@react-aria/interactions",
+        "@react-aria/utils",
+        "@react-types/shared",
+        "@swc/helpers",
+        "clsx",
+        "react",
+        "react-dom"
+      ],
+      "tarball": "https://registry.npmmirror.com/@react-aria/focus/-/focus-3.21.2.tgz"
+    },
+    "@react-aria/interactions@3.25.6_react@19.2.0_react-dom@19.2.0__react@19.2.0": {
+      "integrity": "sha512-5UgwZmohpixwNMVkMvn9K1ceJe6TzlRlAfuYoQDUuOkk62/JVJNDLAPKIf5YMRc7d2B0rmfgaZLMtbREb0Zvkw==",
+      "dependencies": [
+        "@react-aria/ssr",
+        "@react-aria/utils",
+        "@react-stately/flags",
+        "@react-types/shared",
+        "@swc/helpers",
+        "react",
+        "react-dom"
+      ],
+      "tarball": "https://registry.npmmirror.com/@react-aria/interactions/-/interactions-3.25.6.tgz"
+    },
+    "@react-aria/ssr@3.9.10_react@19.2.0": {
+      "integrity": "sha512-hvTm77Pf+pMBhuBm760Li0BVIO38jv1IBws1xFm1NoL26PU+fe+FMW5+VZWyANR6nYL65joaJKZqOdTQMkO9IQ==",
+      "dependencies": [
+        "@swc/helpers",
+        "react"
+      ],
+      "tarball": "https://registry.npmmirror.com/@react-aria/ssr/-/ssr-3.9.10.tgz"
+    },
+    "@react-aria/utils@3.31.0_react@19.2.0_react-dom@19.2.0__react@19.2.0": {
+      "integrity": "sha512-ABOzCsZrWzf78ysswmguJbx3McQUja7yeGj6/vZo4JVsZNlxAN+E9rs381ExBRI0KzVo6iBTeX5De8eMZPJXig==",
+      "dependencies": [
+        "@react-aria/ssr",
+        "@react-stately/flags",
+        "@react-stately/utils",
+        "@react-types/shared",
+        "@swc/helpers",
+        "clsx",
+        "react",
+        "react-dom"
+      ],
+      "tarball": "https://registry.npmmirror.com/@react-aria/utils/-/utils-3.31.0.tgz"
+    },
+    "@react-stately/flags@3.1.2": {
+      "integrity": "sha512-2HjFcZx1MyQXoPqcBGALwWWmgFVUk2TuKVIQxCbRq7fPyWXIl6VHcakCLurdtYC2Iks7zizvz0Idv48MQ38DWg==",
+      "dependencies": [
+        "@swc/helpers"
+      ],
+      "tarball": "https://registry.npmmirror.com/@react-stately/flags/-/flags-3.1.2.tgz"
+    },
+    "@react-stately/utils@3.10.8_react@19.2.0": {
+      "integrity": "sha512-SN3/h7SzRsusVQjQ4v10LaVsDc81jyyR0DD5HnsQitm/I5WDpaSr2nRHtyloPFU48jlql1XX/S04T2DLQM7Y3g==",
+      "dependencies": [
+        "@swc/helpers",
+        "react"
+      ],
+      "tarball": "https://registry.npmmirror.com/@react-stately/utils/-/utils-3.10.8.tgz"
+    },
+    "@react-types/shared@3.32.1_react@19.2.0": {
+      "integrity": "sha512-famxyD5emrGGpFuUlgOP6fVW2h/ZaF405G5KDi3zPHzyjAWys/8W6NAVJtNbkCkhedmvL0xOhvt8feGXyXaw5w==",
+      "dependencies": [
+        "react"
+      ],
+      "tarball": "https://registry.npmmirror.com/@react-types/shared/-/shared-3.32.1.tgz"
     },
     "@rollup/pluginutils@4.2.1": {
       "integrity": "sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==",
@@ -987,6 +1112,13 @@
       "cpu": ["x64"],
       "tarball": "https://registry.npmmirror.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.52.4.tgz"
     },
+    "@swc/helpers@0.5.17": {
+      "integrity": "sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "https://registry.npmmirror.com/@swc/helpers/-/helpers-0.5.17.tgz"
+    },
     "@tailwindcss/node@4.1.14": {
       "integrity": "sha512-hpz+8vFk3Ic2xssIA3e01R6jkmsAhvkQdXlEbRTk6S10xDAtiQiM3FyvZVGsucefq764euO/b8WUW9ysLdThHw==",
       "dependencies": [
@@ -1104,6 +1236,19 @@
       ],
       "tarball": "https://registry.npmmirror.com/@tailwindcss/vite/-/vite-4.1.14.tgz"
     },
+    "@tanstack/react-virtual@3.13.12_react@19.2.0_react-dom@19.2.0__react@19.2.0": {
+      "integrity": "sha512-Gd13QdxPSukP8ZrkbgS2RwoZseTTbQPLnQEn7HY/rqtM+8Zt95f7xKC7N0EsKs7aoz0WzZ+fditZux+F8EzYxA==",
+      "dependencies": [
+        "@tanstack/virtual-core",
+        "react",
+        "react-dom"
+      ],
+      "tarball": "https://registry.npmmirror.com/@tanstack/react-virtual/-/react-virtual-3.13.12.tgz"
+    },
+    "@tanstack/virtual-core@3.13.12": {
+      "integrity": "sha512-1YBOJfRHV4sXUmWsFSf5rQor4Ss82G8dQWLRbnk3GA4jeP8hQt1hxXh0tmflpC0dz3VgEv/1+qwPyLeWkQuPFA==",
+      "tarball": "https://registry.npmmirror.com/@tanstack/virtual-core/-/virtual-core-3.13.12.tgz"
+    },
     "@types/estree@1.0.8": {
       "integrity": "sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==",
       "tarball": "https://registry.npmmirror.com/@types/estree/-/estree-1.0.8.tgz"
@@ -1176,6 +1321,10 @@
     "chownr@3.0.0": {
       "integrity": "sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==",
       "tarball": "https://registry.npmmirror.com/chownr/-/chownr-3.0.0.tgz"
+    },
+    "clsx@2.1.1": {
+      "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+      "tarball": "https://registry.npmmirror.com/clsx/-/clsx-2.1.1.tgz"
     },
     "combined-stream@1.0.8": {
       "integrity": "sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==",
@@ -1657,6 +1806,14 @@
       "integrity": "sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==",
       "tarball": "https://registry.npmmirror.com/qs/-/qs-6.5.3.tgz"
     },
+    "react-dom@19.2.0_react@19.2.0": {
+      "integrity": "sha512-UlbRu4cAiGaIewkPyiRGJk0imDN2T3JjieT6spoL2UeSf5od4n5LB/mQ4ejmxhCFT1tYe8IvaFulzynWovsEFQ==",
+      "dependencies": [
+        "react",
+        "scheduler"
+      ],
+      "tarball": "https://registry.npmmirror.com/react-dom/-/react-dom-19.2.0.tgz"
+    },
     "react-icons@5.5.0_react@19.2.0": {
       "integrity": "sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==",
       "dependencies": [
@@ -1736,6 +1893,10 @@
       "integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==",
       "tarball": "https://registry.npmmirror.com/safer-buffer/-/safer-buffer-2.1.2.tgz"
     },
+    "scheduler@0.27.0": {
+      "integrity": "sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==",
+      "tarball": "https://registry.npmmirror.com/scheduler/-/scheduler-0.27.0.tgz"
+    },
     "semver@6.3.1": {
       "integrity": "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==",
       "bin": true,
@@ -1760,6 +1921,10 @@
       ],
       "bin": true,
       "tarball": "https://registry.npmmirror.com/sshpk/-/sshpk-1.18.0.tgz"
+    },
+    "tabbable@6.2.0": {
+      "integrity": "sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==",
+      "tarball": "https://registry.npmmirror.com/tabbable/-/tabbable-6.2.0.tgz"
     },
     "tailwindcss@4.1.14": {
       "integrity": "sha512-b7pCxjGO98LnxVkKjaZSDeNuljC4ueKUddjENJOADtubtdo8llTaJy7HwBMeLNSSo2N5QIAgklslK1+Ir8r6CA==",
@@ -1796,6 +1961,10 @@
       ],
       "tarball": "https://registry.npmmirror.com/tough-cookie/-/tough-cookie-2.5.0.tgz"
     },
+    "tslib@2.8.1": {
+      "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==",
+      "tarball": "https://registry.npmmirror.com/tslib/-/tslib-2.8.1.tgz"
+    },
     "tunnel-agent@0.6.0": {
       "integrity": "sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==",
       "dependencies": [
@@ -1823,6 +1992,13 @@
         "punycode"
       ],
       "tarball": "https://registry.npmmirror.com/uri-js/-/uri-js-4.4.1.tgz"
+    },
+    "use-sync-external-store@1.6.0_react@19.2.0": {
+      "integrity": "sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==",
+      "dependencies": [
+        "react"
+      ],
+      "tarball": "https://registry.npmmirror.com/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz"
     },
     "uuid@3.4.0": {
       "integrity": "sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==",
@@ -1870,6 +2046,7 @@
       "jsr:@fresh/core@^2.1.1",
       "jsr:@fresh/plugin-vite@^1.0.4",
       "jsr:@std/http@^1.0.21",
+      "npm:@headlessui/react@^2.2.9",
       "npm:@preact/signals@^2.3.1",
       "npm:@tailwindcss/vite@^4.1.12",
       "npm:daisyui@^5.1.28",
