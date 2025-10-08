@@ -1,7 +1,7 @@
 import { Head } from "fresh/runtime";
 import { define } from "../utils.ts";
 import { Car } from "lucide-react";
-
+import { FaBeer } from "react-icons/fa";
 export default define.page(function Home(ctx) {
   console.log("Shared value " + ctx.state.shared);
 
@@ -15,6 +15,7 @@ export default define.page(function Home(ctx) {
         className="btn btn-primary rounded-full"
       >
         <Car />
+        <FaBeer />
       </button>
     </div>
   );
