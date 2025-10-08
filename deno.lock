@@ -30,7 +30,6 @@
     "jsr:@std/http@^1.0.15": "1.0.21",
     "jsr:@std/http@^1.0.21": "1.0.21",
     "jsr:@std/internal@^1.0.10": "1.0.12",
-    "jsr:@std/json@^1.0.2": "1.0.2",
     "jsr:@std/jsonc@1": "1.0.2",
     "jsr:@std/media-types@0.221": "0.221.0",
     "jsr:@std/media-types@1": "1.1.0",
@@ -49,33 +48,26 @@
     "npm:@mjackson/node-fetch-server@0.7": "0.7.0",
     "npm:@opentelemetry/api@^1.9.0": "1.9.0",
     "npm:@preact/signals@^2.2.1": "2.3.2_preact@10.27.2",
-    "npm:@preact/signals@^2.3.1": "2.3.2_preact@10.27.2",
-    "npm:@prefresh/vite@^2.4.8": "2.4.10_preact@10.27.2_vite@7.1.9__picomatch@4.0.3_@types+node@24.2.0",
-    "npm:@tailwindcss/vite@^4.1.12": "4.1.14_vite@7.1.9__picomatch@4.0.3_@types+node@24.2.0",
-    "npm:@types/node@*": "24.2.0",
+    "npm:@prefresh/vite@^2.4.8": "2.4.10_preact@10.27.2_vite@7.1.9__picomatch@4.0.3",
+    "npm:@tailwindcss/vite@^4.1.12": "4.1.14_vite@7.1.9__picomatch@4.0.3",
     "npm:daisyui@^5.1.28": "5.1.28",
     "npm:esbuild-wasm@0.25.7": "0.25.7",
     "npm:esbuild@0.25.7": "0.25.7",
-    "npm:esbuild@~0.25.5": "0.25.7",
     "npm:lucide-react@0.545": "0.545.0_react@19.2.0",
     "npm:oauthio@~0.3.5": "0.3.5",
     "npm:preact-render-to-string@^6.5.11": "6.6.2_preact@10.27.2",
     "npm:preact@^10.27.0": "10.27.2",
-    "npm:preact@^10.27.2": "10.27.2",
     "npm:react-icons@^5.5.0": "5.5.0_react@19.2.0",
-    "npm:rollup@^4.50.0": "4.52.4",
     "npm:tailwindcss@^4.1.10": "4.1.14",
-    "npm:vite@7.1.9": "7.1.9_picomatch@4.0.3_@types+node@24.2.0",
-    "npm:vite@^7.1.3": "7.1.9_picomatch@4.0.3_@types+node@24.2.0",
-    "npm:vite@^7.1.4": "7.1.9_picomatch@4.0.3_@types+node@24.2.0"
+    "npm:vite@7.1.9": "7.1.9_picomatch@4.0.3",
+    "npm:vite@^7.1.3": "7.1.9_picomatch@4.0.3"
   },
   "jsr": {
     "@deno/esbuild-plugin@1.2.0": {
       "integrity": "04ddd0fca9416d8a2866263928a53b9d5ed08dfca064d64504a0aaf9800c709e",
       "dependencies": [
         "jsr:@deno/loader@~0.3.3",
-        "jsr:@std/path@^1.1.1",
-        "npm:esbuild@~0.25.5"
+        "jsr:@std/path@^1.1.1"
       ]
     },
     "@deno/kv-oauth@0.11.0": {
@@ -110,11 +102,11 @@
         "jsr:@std/semver",
         "jsr:@std/uuid",
         "npm:@opentelemetry/api",
-        "npm:@preact/signals@^2.2.1",
+        "npm:@preact/signals",
+        "npm:esbuild",
         "npm:esbuild-wasm",
-        "npm:esbuild@0.25.7",
-        "npm:preact-render-to-string",
-        "npm:preact@^10.27.0"
+        "npm:preact",
+        "npm:preact-render-to-string"
       ]
     },
     "@fresh/plugin-vite@1.0.4": {
@@ -129,9 +121,7 @@
         "npm:@babel/core",
         "npm:@babel/preset-react",
         "npm:@mjackson/node-fetch-server",
-        "npm:@prefresh/vite",
-        "npm:rollup",
-        "npm:vite@^7.1.4"
+        "npm:@prefresh/vite"
       ]
     },
     "@std/assert@0.221.0": {
@@ -209,14 +199,8 @@
     "@std/internal@1.0.12": {
       "integrity": "972a634fd5bc34b242024402972cd5143eac68d8dffaca5eaa4dba30ce17b027"
     },
-    "@std/json@1.0.2": {
-      "integrity": "d9e5497801c15fb679f55a2c01c7794ad7a5dfda4dd1bebab5e409cb5e0d34d4"
-    },
     "@std/jsonc@1.0.2": {
-      "integrity": "909605dae3af22bd75b1cbda8d64a32cf1fd2cf6efa3f9e224aba6d22c0f44c7",
-      "dependencies": [
-        "jsr:@std/json"
-      ]
+      "integrity": "909605dae3af22bd75b1cbda8d64a32cf1fd2cf6efa3f9e224aba6d22c0f44c7"
     },
     "@std/media-types@0.221.0": {
       "integrity": "572addcbda2a21367c1f8eaa8c72fea6654b50779027dbde9f693aaa4bac30c3"
@@ -859,20 +843,7 @@
         "@prefresh/utils",
         "@rollup/pluginutils",
         "preact",
-        "vite@7.1.9_picomatch@4.0.3"
-      ],
-      "tarball": "https://registry.npmmirror.com/@prefresh/vite/-/vite-2.4.10.tgz"
-    },
-    "@prefresh/vite@2.4.10_preact@10.27.2_vite@7.1.9__picomatch@4.0.3_@types+node@24.2.0": {
-      "integrity": "sha512-lt+ODASOtXRWaPplp7/DlrgAaInnQYNvcpCglQBMx2OeJPyZ4IqPRaxsK77w96mWshjYwkqTsRSHoAM7aAn0ow==",
-      "dependencies": [
-        "@babel/core",
-        "@prefresh/babel-plugin",
-        "@prefresh/core",
-        "@prefresh/utils",
-        "@rollup/pluginutils",
-        "preact",
-        "vite@7.1.9_picomatch@4.0.3_@types+node@24.2.0"
+        "vite"
       ],
       "tarball": "https://registry.npmmirror.com/@prefresh/vite/-/vite-2.4.10.tgz"
     },
@@ -1129,30 +1100,13 @@
         "@tailwindcss/node",
         "@tailwindcss/oxide",
         "tailwindcss",
-        "vite@7.1.9_picomatch@4.0.3"
-      ],
-      "tarball": "https://registry.npmmirror.com/@tailwindcss/vite/-/vite-4.1.14.tgz"
-    },
-    "@tailwindcss/vite@4.1.14_vite@7.1.9__picomatch@4.0.3_@types+node@24.2.0": {
-      "integrity": "sha512-BoFUoU0XqgCUS1UXWhmDJroKKhNXeDzD7/XwabjkDIAbMnc4ULn5e2FuEuBbhZ6ENZoSYzKlzvZ44Yr6EUDUSA==",
-      "dependencies": [
-        "@tailwindcss/node",
-        "@tailwindcss/oxide",
-        "tailwindcss",
-        "vite@7.1.9_picomatch@4.0.3_@types+node@24.2.0"
+        "vite"
       ],
       "tarball": "https://registry.npmmirror.com/@tailwindcss/vite/-/vite-4.1.14.tgz"
     },
     "@types/estree@1.0.8": {
       "integrity": "sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==",
       "tarball": "https://registry.npmmirror.com/@types/estree/-/estree-1.0.8.tgz"
-    },
-    "@types/node@24.2.0": {
-      "integrity": "sha512-3xyG3pMCq3oYCNg7/ZP+E1ooTaGB4cG8JWRsqqOYQdbWNY4zbaV0Ennrd7stjiJEFZCaybcIgpTjJWHRfBSIDw==",
-      "dependencies": [
-        "undici-types"
-      ],
-      "tarball": "https://registry.npmmirror.com/@types/node/-/node-24.2.0.tgz"
     },
     "ajv@6.12.6": {
       "integrity": "sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==",
@@ -1211,9 +1165,9 @@
       "bin": true,
       "tarball": "https://registry.npmmirror.com/browserslist/-/browserslist-4.26.3.tgz"
     },
-    "caniuse-lite@1.0.30001748": {
-      "integrity": "sha512-5P5UgAr0+aBmNiplks08JLw+AW/XG/SurlgZLgB1dDLfAw7EfRGxIwzPHxdSCGY/BTKDqIVyJL87cCN6s0ZR0w==",
-      "tarball": "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001748.tgz"
+    "caniuse-lite@1.0.30001749": {
+      "integrity": "sha512-0rw2fJOmLfnzCRbkm8EyHL8SvI2Apu5UbnQuTsJ0ClgrH8hcwFooJ1s5R0EP8o8aVrFu8++ae29Kt9/gZAZp/Q==",
+      "tarball": "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001749.tgz"
     },
     "caseless@0.12.0": {
       "integrity": "sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==",
@@ -1272,9 +1226,9 @@
       ],
       "tarball": "https://registry.npmmirror.com/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz"
     },
-    "electron-to-chromium@1.5.232": {
-      "integrity": "sha512-ENirSe7wf8WzyPCibqKUG1Cg43cPaxH4wRR7AJsX7MCABCHBIOFqvaYODSLKUuZdraxUTHRE/0A2Aq8BYKEHOg==",
-      "tarball": "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.5.232.tgz"
+    "electron-to-chromium@1.5.233": {
+      "integrity": "sha512-iUdTQSf7EFXsDdQsp8MwJz5SVk4APEFqXU/S47OtQ0YLqacSwPXdZ5vRlMX3neb07Cy2vgioNuRnWUXFwuslkg==",
+      "tarball": "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.5.233.tgz"
     },
     "enhanced-resolve@5.18.3": {
       "integrity": "sha512-d4lC8xfavMeBjzGr2vECC3fsGXziXZQyJxD868h2M/mBI3PwAuODxAkLkq5HYuvrPYcUtiLzsTo8U3PgX3Ocww==",
@@ -1853,10 +1807,6 @@
       "integrity": "sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA==",
       "tarball": "https://registry.npmmirror.com/tweetnacl/-/tweetnacl-0.14.5.tgz"
     },
-    "undici-types@7.10.0": {
-      "integrity": "sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==",
-      "tarball": "https://registry.npmmirror.com/undici-types/-/undici-types-7.10.0.tgz"
-    },
     "update-browserslist-db@1.1.3_browserslist@4.26.3": {
       "integrity": "sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==",
       "dependencies": [
@@ -1901,26 +1851,6 @@
       ],
       "optionalDependencies": [
         "fsevents"
-      ],
-      "bin": true,
-      "tarball": "https://registry.npmmirror.com/vite/-/vite-7.1.9.tgz"
-    },
-    "vite@7.1.9_picomatch@4.0.3_@types+node@24.2.0": {
-      "integrity": "sha512-4nVGliEpxmhCL8DslSAUdxlB6+SMrhB0a1v5ijlh1xB1nEPuy1mxaHxysVucLHuWryAxLWg6a5ei+U4TLn/rFg==",
-      "dependencies": [
-        "@types/node",
-        "esbuild@0.25.10",
-        "fdir",
-        "picomatch@4.0.3",
-        "postcss",
-        "rollup",
-        "tinyglobby"
-      ],
-      "optionalDependencies": [
-        "fsevents"
-      ],
-      "optionalPeers": [
-        "@types/node"
       ],
       "bin": true,
       "tarball": "https://registry.npmmirror.com/vite/-/vite-7.1.9.tgz"

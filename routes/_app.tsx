@@ -1,5 +1,4 @@
 import { define } from "tools/utils.ts";
-
 export default define.page(function App({ Component }) {
   return (
     <html>

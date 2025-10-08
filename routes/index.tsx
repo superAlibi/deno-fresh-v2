@@ -1,11 +1,7 @@
 import { Head } from "fresh/runtime";
 import { define } from "tools/utils.ts";
-import { Car, Link } from "lucide-react";
-import { FaBeer } from "react-icons/fa";
 import { FaGithub, FaSignOutAlt } from "react-icons/fa";
-export default define.page(function Home(ctx) {
-  console.log("nikename", ctx.state.nikeName, "deviceId", ctx.state.deviceId);
-
+export default define.page(function Home() {
   return (
     <div class="px-4 py-8 mx-auto fresh-gradient min-h-screen">
       <Head>
