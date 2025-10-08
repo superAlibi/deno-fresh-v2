@@ -1,22 +1,32 @@
 import { Head } from "fresh/runtime";
-import { define } from "../utils.ts";
-import { Car } from "lucide-react";
+import { define } from "tools/utils.ts";
+import { Car, Link } from "lucide-react";
 import { FaBeer } from "react-icons/fa";
+import { FaGithub, FaSignOutAlt } from "react-icons/fa";
 export default define.page(function Home(ctx) {
-  console.log("Shared value " + ctx.state.shared);
+  console.log("nikename", ctx.state.nikeName, "deviceId", ctx.state.deviceId);
 
   return (
     <div class="px-4 py-8 mx-auto fresh-gradient min-h-screen">
       <Head>
-        <title>Fresh counter</title>
+        <title>云逸尘的fresh项目</title>
       </Head>
-      <button
+
+      <a
+        title="Sign in with GitHub"
+        href="/api/oauth/signin"
         type="button"
-        className="btn btn-primary rounded-full"
+        className="btn btn-square rounded-full"
       >
-        <Car />
-        <FaBeer />
-      </button>
+        <FaGithub size={24} />
+      </a>
+      <a
+        title="Sign out"
+        href="/api/oauth/signout"
+        class="btn btn-square rounded-full"
+      >
+        <FaSignOutAlt size={24} />
+      </a>
     </div>
   );
 });

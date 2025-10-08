@@ -7,6 +7,10 @@
     "start": "deno serve -A _fresh/server.js",
     "update": "deno run -A -r jsr:@fresh/update ."
   },
+  "unstable": [
+    "temporal",
+    "kv"
+  ],
   "lint": {
     "rules": {
       "tags": [
@@ -19,6 +23,9 @@
     "**/_fresh/*"
   ],
   "imports": {
+    "@deno/kv-oauth": "jsr:@deno/kv-oauth@^0.11.0",
+    "@std/http": "jsr:@std/http@^1.0.21",
+    "tools/": "./tools/",
     "daisyui": "npm:daisyui@^5.1.28",
     "fresh": "jsr:@fresh/core@^2.1.1",
     "lucide-react": "npm:lucide-react@^0.545.0",
@@ -31,11 +38,17 @@
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.12"
   },
   "compilerOptions": {
+    "paths": {
+      "tools/*": [
+        "./tools/*"
+      ]
+    },
     "lib": [
       "dom",
       "dom.asynciterable",
       "dom.iterable",
-      "deno.ns"
+      "deno.ns",
+      "deno.unstable"
     ],
     "jsx": "precompile",
     "jsxImportSource": "preact",
