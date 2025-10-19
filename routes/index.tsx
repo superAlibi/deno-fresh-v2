@@ -87,7 +87,7 @@ export default define.page(function Home(ctx) {
                   title="使用 GitHub 登录"
                   href="/api/oauth/signin"
                   type="button"
-                  className="btn btn-neutral btn-outline"
+                  className="btn btn-outline "
                 >
                   login with GitHub
                   {/* <FaGithub size={24} /> */}
