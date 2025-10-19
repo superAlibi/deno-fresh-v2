@@ -5,6 +5,7 @@ import { createDefine } from "fresh";
 export interface State {
   nikeName?: string | null;
   deviceId?: string | null;
+  githubSessionId?: string;
 }
 
 /**
