@@ -12,7 +12,7 @@ export const handler = define.handlers({
 });
 export default define.page(function Home(ctx) {
   return (
-    <div class="px-4 py-8 flex flex-col max-w-3xl mx-auto  min-h-screen">
+    <div class="px-4  flex flex-col max-w-3xl mx-auto  min-h-screen">
       <Head>
         <title>云逸尘的fresh项目</title>
       </Head>
