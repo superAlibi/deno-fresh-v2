@@ -1,5 +1,6 @@
 import { define } from "tools/utils.ts";
-export default define.page(function App({ Component }) {
+export default define.page(function App({ req, Component }) {
+  
   return (
     <html>
       <head>

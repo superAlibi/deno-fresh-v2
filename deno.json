@@ -19,6 +19,7 @@
     "oauthio": "npm:oauthio@^0.3.5",
     "preact": "npm:preact@^10.28.0",
     "tools/": "./tools/",
+    "islands/": "./islands/",
     "daisyui": "npm:daisyui@^5.5.14",
     "fresh": "jsr:@fresh/core@^2.2.0",
     "lucide-react": "npm:lucide-react@^0.545.0",
@@ -36,6 +37,9 @@
       "deno.ns",
       "deno.unstable"
     ],
+    "paths": {
+      "@": "./"
+    },
     "jsx": "precompile",
     "jsxImportSource": "preact",
     "jsxPrecompileSkipElements": [
