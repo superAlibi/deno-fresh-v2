@@ -9,8 +9,12 @@ const menus: MenuItem[] = [
     label: "案例",
     children: [
       {
-        label: "滚动和锚点",
+        label: "滚动&锚点&容器粘贴状态",
         href: "/css",
+      },
+      {
+        label: "滚动&锚点&标记",
+        href: "/css/scroll-mark",
       },
       {
         label: "webrtc",

@@ -36,51 +36,22 @@ const images = [
     alt: "一幅黑白画，描绘了一个盘腿坐着的人",
   },
 ];
-const 知识点 = [
-  "Scroll Buttons",
-  "Scroll Markers",
-  "Scroll-State Queries",
-  "Scroll Initial Target",
-  "Anchor",
-  "Full Bleed",
-];
-export default define.page(function cssScrollDefaultPage(ctx) {
+
+export default define.page(function Home() {
   return (
     <main>
       <Head>
-        <link rel="stylesheet" href={asset("/css/index.css")} />
+        <link rel="stylesheet" href={asset("/css/scroll-mark.css")} />
       </Head>
-      <article
-        className={cn("max-w-[50cqi] mx-auto flex flex-col gap-4 text-center")}
-      >
-        <h3 className="text-center text-2xl font-bold">
-          水平滚动的卡片
-        </h3>
-
-        <p className="flex gap-2 flex-wrap">
-          {知识点.map((item) => (
-            <span
-              class={cn(
-                "bg-base-200 px-2 py-1 rounded-md text-content",
-                "whitespace-nowrap",
-              )}
-              key={item}
-            >
-              {item}
-            </span>
-          ))}
-        </p>
-        <h4>
-          每次滚动, 都有一张图片在滚动区域的最中间
-        </h4>
-      </article>
+      <h3 className="text-center text-2xl font-bold mb-4">
+        每次滚动, 都有一张图片在滚动区域的最中间
+      </h3>
       <ul
         class={cn(
           // 引用的css文件使用的class
           "snap-x-container",
           // 容器相关的class
-          "flex gap-4 max-w-[800px] mx-auto overflow-x-auto p-4 px-60 contain-inline-size",
-          // 布局相关的class
+          "flex gap-4 max-w-[800px] mx-auto overflow-x-auto px-60 contain-inline-size",
           "snap-x snap-mandatory scroll-smooth",
         )}
       >
@@ -89,30 +60,16 @@ export default define.page(function cssScrollDefaultPage(ctx) {
             key={index}
             tabIndex={index}
             className={cn(
-              " rounded-xl overflow-hidden",
+              "bg-white/30",
+              " rounded-xl @container/item",
               "relative h-[40cqi] min-w-[40cqi]",
               " snap-center snap-always",
             )}
           >
-            <figure>
-              <picture>
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </picture>
-              <figcaption
-                className={cn(
-                  "transition-all duration-300 opacity-100 translate-y-full",
-                  "absolute left-0 right-0 bottom-0 p-4 pt-6",
-                  // 背景
-                  "bg-linear-to-b from-transparent to-black/75",
-                )}
-              >
-                <h5 className={cn("text-2xl font-bold")}>{image.label}</h5>
-                <p>{image.description}</p>
-              </figcaption>
-            </figure>
+            <img
+              src={image.src}
+              alt={image.alt}
+            />
           </li>
         ))}
       </ul>
