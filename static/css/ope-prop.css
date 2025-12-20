@@ -1,5 +1,0 @@
-@layer system, components, utilities;
-
-@import "open-props/style" layer(system);
-@import "open-props/normalize" layer(system);
-@import "open-props/buttons" layer(system);

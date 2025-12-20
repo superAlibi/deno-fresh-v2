@@ -13,10 +13,6 @@ const menus: MenuItem[] = [
         href: "/css",
       },
       {
-        label: "滚动和状态",
-        href: "/css/cards",
-      },
-      {
         label: "webrtc",
         href: "/webrtc",
       },
@@ -47,7 +43,7 @@ const menus: MenuItem[] = [
 ];
 export default define.layout(function cssNavLayout({ Component, state }) {
   return (
-    <div class="px-4  flex flex-col max-w-4xl mx-auto @container/layout min-h-screen">
+    <div class="px-4  max-w-4xl mx-auto @container/layout min-h-screen contain-inline-size">
       <header className="flex items-center justify-between mb-8 gap-10">
         <HeaderNavbar state={state} menus={menus} />
       </header>

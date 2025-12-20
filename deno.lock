@@ -52,6 +52,8 @@
     "npm:@prefresh/vite@^2.4.8": "2.4.11_preact@10.28.0_vite@7.3.0__@types+node@24.2.0__picomatch@4.0.3_@types+node@24.2.0",
     "npm:@tailwindcss/vite@^4.1.18": "4.1.18_vite@7.3.0__@types+node@24.2.0__picomatch@4.0.3_@types+node@24.2.0",
     "npm:@types/node@*": "24.2.0",
+    "npm:class-variance-authority@~0.7.1": "0.7.1",
+    "npm:clsx@^2.1.1": "2.1.1",
     "npm:daisyui@^5.5.14": "5.5.14",
     "npm:esbuild-wasm@~0.25.11": "0.25.12",
     "npm:esbuild@0.25.7": "0.25.7",
@@ -66,6 +68,7 @@
     "npm:preact@^10.28.0": "10.28.0",
     "npm:react-icons@^5.5.0": "5.5.0_react@19.2.0",
     "npm:rollup@^4.50.0": "4.53.5",
+    "npm:tailwind-merge@^3.4.0": "3.4.0",
     "npm:tailwindcss@^4.1.18": "4.1.18",
     "npm:vite@^7.1.4": "7.3.0_@types+node@24.2.0_picomatch@4.0.3",
     "npm:vite@^7.3.0": "7.3.0_@types+node@24.2.0_picomatch@4.0.3"
@@ -1172,6 +1175,12 @@
     "caseless@0.12.0": {
       "integrity": "sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw=="
     },
+    "class-variance-authority@0.7.1": {
+      "integrity": "sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==",
+      "dependencies": [
+        "clsx"
+      ]
+    },
     "clsx@2.1.1": {
       "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA=="
     },
@@ -1688,6 +1697,9 @@
     "tabbable@6.2.0": {
       "integrity": "sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew=="
     },
+    "tailwind-merge@3.4.0": {
+      "integrity": "sha512-uSaO4gnW+b3Y2aWoWfFpX62vn2sR3skfhbjsEnaBI81WD1wBLlHZe5sWf0AqjksNdYTbGBEd0UasQMT3SNV15g=="
+    },
     "tailwindcss@4.1.18": {
       "integrity": "sha512-4+Z+0yiYyEtUVCScyfHCxOYP06L5Ne+JiHhY2IjR2KWMIWhJOYZKLSGZaP5HkZ8+bY0cxfzwDE5uOmzFXyIwxw=="
     },
@@ -1789,6 +1801,8 @@
       "npm:@headlessui/react@^2.2.9",
       "npm:@preact/signals@^2.5.1",
       "npm:@tailwindcss/vite@^4.1.18",
+      "npm:class-variance-authority@~0.7.1",
+      "npm:clsx@^2.1.1",
       "npm:daisyui@^5.5.14",
       "npm:esbuild@~0.27.2",
       "npm:lucide-react@0.545",
@@ -1796,6 +1810,7 @@
       "npm:open-props@^1.7.17",
       "npm:preact@^10.28.0",
       "npm:react-icons@^5.5.0",
+      "npm:tailwind-merge@^3.4.0",
       "npm:tailwindcss@^4.1.18",
       "npm:vite@^7.3.0"
     ]
