@@ -1,7 +1,7 @@
 import { IS_BROWSER } from "fresh/runtime";
 import { useCallback, useEffect, useRef } from "preact/hooks";
 
-export default function WebglOnWorker() {
+export default function Webrtc() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {

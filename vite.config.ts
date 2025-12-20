@@ -6,5 +6,5 @@ export default defineConfig({
     port: 5030,
     host: true,
   },
-  plugins: [fresh(), tailwindcss()],
+  plugins: [fresh({}), tailwindcss()],
 });

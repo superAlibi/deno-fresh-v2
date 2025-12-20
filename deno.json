@@ -17,6 +17,7 @@
     "@std/http": "jsr:@std/http@^1.0.22",
     "esbuild": "npm:esbuild@^0.27.2",
     "oauthio": "npm:oauthio@^0.3.5",
+    "open-props": "npm:open-props@^1.7.17",
     "preact": "npm:preact@^10.28.0",
     "tools/": "./tools/",
     "islands/": "./islands/",

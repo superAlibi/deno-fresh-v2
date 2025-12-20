@@ -9,14 +9,17 @@ export const handler = define.handlers({
     return ctx;
   },
 });
-export default define.page(function Home({ Component ,state}) {
+export default define.page(function Home({ Component, state }) {
   return (
     <div class="px-4  flex flex-col max-w-4xl mx-auto  min-h-screen">
       <Head>
-        <title>云逸尘的fresh项目</title>
+        <title>首页-云逸尘的fresh项目</title>
       </Head>
 
-      <div>欢迎您来到我的fresh项目, 当前登陆状态: {state.githubSessionId ? "已登陆" : "未登陆"} </div>
+      <div>
+        欢迎您来到我的fresh项目, 当前登陆状态:{" "}
+        {state.githubSessionId ? "已登陆" : "未登陆"}
+      </div>
     </div>
   );
 });

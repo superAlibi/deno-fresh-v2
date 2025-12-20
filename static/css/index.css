@@ -26,10 +26,10 @@
     display: flex;
     gap: 1em;
     place-content: center;
-    margin-block-start: -2em;
+    margin-block-start: -2.5em;
 }
 
-
+/* 切换按钮样式 */
 .snap-x-container::scroll-button(*):hover {
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
@@ -46,7 +46,9 @@
     /* 设置滚动按钮的轮廓偏移 */
     /* outline-offset: 5px; */
     border-radius: 50%;
-    border-style: solid;
+    /* 
+    border-style: solid; */
+    border: none;
     height: 30px;
     width: 30px;
     background-color: rgba(0, 0, 0, 0.1);
