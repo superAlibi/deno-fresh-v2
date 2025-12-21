@@ -72,6 +72,10 @@ export const menus: MenuItem[] = [
         href: "/css/progress",
       },
       {
+        label: "加载/进度条 - rgb",
+        href: "/css/progress-rgb",
+      },
+      {
         label: "webrtc",
         href: "/webrtc",
       },

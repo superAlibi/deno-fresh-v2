@@ -7,6 +7,7 @@ export default define.page(function MaxContentAnimation() {
     <>
       <Head>
         <link rel="stylesheet" href={asset("/css/max-content-animation.css")} />
+        <title>带interpolate-size的动画</title>
       </Head>
       <main
         className={cn(

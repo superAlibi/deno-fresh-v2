@@ -10,13 +10,14 @@ export default define.page(function MaxContentAnimation() {
           rel="stylesheet"
           href={asset("/css/not-interpolate-size-max-content-animation.css")}
         />
+
+        <title>不带interpolate-size的动画 - 云逸尘的fresh项目</title>
       </Head>
       <main
         className={cn(
           "max-w-[100cqi] @container/main contain-inline-size mx-auto",
         )}
       >
-     
         <div class={cn("size-[100cqi] flex gap-4")}>
           <section
             tabIndex={0}
