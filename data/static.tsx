@@ -68,6 +68,10 @@ export const menus: MenuItem[] = [
         href: "/css/scroll-bar",
       },
       {
+        label: "加载/进度条",
+        href: "/css/progress",
+      },
+      {
         label: "webrtc",
         href: "/webrtc",
       },
