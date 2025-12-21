@@ -11,7 +11,7 @@ export default define.page(function AnimationTimeline() {
       </Head>
       <main
         className={cn(
-          " overflow-hidden ",
+          " overflow-hidden relative",
         )}
       >
         <h1>滚动时间线</h1>
