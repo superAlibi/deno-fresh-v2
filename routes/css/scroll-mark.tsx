@@ -2,7 +2,7 @@ import { asset, Head } from "fresh/runtime";
 import { define } from "tools/utils.ts";
 import { cn } from "tools/css.ts";
 
-import { images } from "data/static.ts";
+import { images } from "data/static.tsx";
 const 知识点 = [
   "Scroll Buttons",
   "Scroll Markers",

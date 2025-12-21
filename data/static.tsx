@@ -1,4 +1,5 @@
 import { asset } from "fresh/runtime";
+import { MenuItem } from "../components/header-nav.tsx";
 
 export const images = [
   {
@@ -32,5 +33,54 @@ export const images = [
     label: "耐心等待",
     description: "在宁静中寻找内心的平衡，学会在等待中发现生活的美好。",
     alt: "一幅黑白画，描绘了一个盘腿坐着的人",
+  },
+];
+
+/**
+ * 菜单配置
+ */
+export const menus: MenuItem[] = [
+  {
+    label: "案例",
+    children: [
+      {
+        label: "滚动&锚点&容器粘贴状态",
+        href: "/css",
+      },
+      {
+        label: "滚动&锚点&标记",
+        href: "/css/scroll-mark",
+      },
+      {
+        label: "滚动条",
+        href: "/css/scroll-bar",
+      },
+      {
+        label: "webrtc",
+        href: "/webrtc",
+      },
+    ],
+  },
+
+  {
+    label: "其他站点",
+    children: [
+      {
+        label: "博客&笔记",
+        href: "https://notes.lucardo.website",
+      },
+      {
+        label: "react-router 7",
+        href: "https://remix.lucardo.website",
+      },
+    ],
+  },
+  {
+    label: (
+      <>
+        github逛逛
+      </>
+    ),
+    href: "https://github.com/superAlibi",
   },
 ];
