@@ -1,8 +1,9 @@
 // import { Sun } from "lucide-react";
-export const ThemeTrigger = () => {
+const ThemeTrigger = () => {
   return (
-    <button className="btn btn-ghost">
+    <button type="button" className="btn btn-ghost">
       wtf
     </button>
   );
 };
+export default ThemeTrigger;

@@ -44,6 +44,10 @@ export const menus: MenuItem[] = [
     label: "案例",
     children: [
       {
+        label: "开始动画",
+        href: "/css/start-nimation",
+      },
+      {
         label: "滚动&锚点&容器粘贴状态",
         href: "/css",
       },
@@ -54,6 +58,10 @@ export const menus: MenuItem[] = [
       {
         label: "锚点定位能力",
         href: "/css/anchor-position",
+      },
+      {
+        label: "最大内容动画",
+        href: "/css/max-content-animation",
       },
       {
         label: "滚动条",
