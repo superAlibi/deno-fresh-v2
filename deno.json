@@ -23,6 +23,7 @@
     "preact": "npm:preact@^10.28.0",
     "tailwind-merge": "npm:tailwind-merge@^3.4.0",
     "tools/": "./tools/",
+    "data/": "./data/",
     "islands/": "./islands/",
     "daisyui": "npm:daisyui@^5.5.14",
     "fresh": "jsr:@fresh/core@^2.2.0",

@@ -1,41 +1,8 @@
 import { asset, Head } from "fresh/runtime";
 import { define } from "tools/utils.ts";
 import { cn } from "tools/css.ts";
+import { images } from "data/static.ts";
 
-const images = [
-  {
-    src: asset("/images/web-scroll/Entertainment.svg"),
-    label: "即兴漫步",
-    description: "享受音乐带来的自由与快乐，让节奏引领你的每一步。",
-    alt:
-      "一幅黑白画，描绘了一个卷发的人，穿着夹克和裤子，手里拿着一个看起来像小型媒体播放器的设备",
-  },
-  {
-    src: asset("/images/web-scroll/Mechanical+Love.svg"),
-    label: "机械之爱",
-    description: "在科技与情感的交汇处，发现人与人之间最真挚的连接。",
-    alt: "一幅黑白画，描绘了两个人并排站着，互相拥抱，都背着背包",
-  },
-  {
-    src: asset("/images/web-scroll/New+Beginnings.svg"),
-    label: "新的开始是美好的",
-    description:
-      "每一次新的开始都蕴含着无限可能，让我们以开放的心态拥抱变化，在知识的海洋中不断探索，发现真理与智慧的光芒。",
-    alt: "一幅黑白画，描绘了一个人坐在扶手椅上读书，椅子上有连接到这个人的电线",
-  },
-  {
-    src: asset("/images/web-scroll/Roboto.svg"),
-    label: "赛博跳跃者",
-    description: "探索未来世界的冒险之旅，体验科技与人类智慧的完美结合。",
-    alt: "一幅黑白线条画，描绘了一个穿着夹克、裤子和头盔的未来主义人物大步向前",
-  },
-  {
-    src: asset("/images/web-scroll/Waiting.svg"),
-    label: "耐心等待",
-    description: "在宁静中寻找内心的平衡，学会在等待中发现生活的美好。",
-    alt: "一幅黑白画，描绘了一个盘腿坐着的人",
-  },
-];
 const 知识点 = [
   "Scroll Buttons",
   "Scroll Markers",
@@ -44,20 +11,30 @@ const 知识点 = [
   "Anchor",
   "Full Bleed",
 ];
-export default define.page(function cssScrollDefaultPage(ctx) {
+export default define.page(function cssScrollDefaultPage() {
   return (
-    <main>
+    <main
+      className={cn(
+        "max-w-[100cqi] overflow-hidden @container/main contain-inline-size",
+      )}
+    >
       <Head>
         <link rel="stylesheet" href={asset("/css/index.css")} />
       </Head>
       <article
-        className={cn("max-w-[50cqi] mx-auto flex flex-col gap-4 text-center")}
+        className={cn(
+          // 基本
+          "flex flex-col gap-4 text-center",
+          "",
+          // 平板或以上
+          "lg:max-w-[50cqi] lg:mx-auto ",
+        )}
       >
         <h3 className="text-center text-2xl font-bold">
           水平滚动的卡片
         </h3>
 
-        <p className="flex gap-2 flex-wrap">
+        <p className="flex gap-2 flex-wrap text-center justify-center">
           {知识点.map((item) => (
             <span
               class={cn(
@@ -78,10 +55,12 @@ export default define.page(function cssScrollDefaultPage(ctx) {
         class={cn(
           // 引用的css文件使用的class
           "snap-x-container",
-          // 容器相关的class
-          "flex gap-4 max-w-[800px] mx-auto overflow-x-auto p-4 px-60 contain-inline-size",
-          // 布局相关的class
-          "snap-x snap-mandatory scroll-smooth",
+          // 基本
+          "overflow-x-auto flex items-center gap-4 py-4 px-10 contain-size @container/list snap-x snap-mandatory scroll-smooth",
+          // 移动端
+          "size-[100cqi]",
+          // 平板或以上
+          "md:h-[400px] lg:w-full ",
         )}
       >
         {images.map((image, index) => (
@@ -89,9 +68,12 @@ export default define.page(function cssScrollDefaultPage(ctx) {
             key={index}
             tabIndex={index}
             className={cn(
-              " rounded-xl overflow-hidden",
-              "relative h-[40cqi] min-w-[40cqi]",
-              " snap-center snap-always",
+              // base
+              "relative rounded-xl shrink-0 overflow-hidden snap-center snap-always last:mr-[30cqb] first:ml-[30cqb]",
+              // mobile
+              "h-[100cqi] aspect-square",
+              // 平板或以上
+              "md:size-[40cqi]",
             )}
           >
             <figure>

@@ -48,7 +48,7 @@ const menus: MenuItem[] = [
 export default define.layout(function cssNavLayout({ Component, state }) {
   return (
     <div class="px-4  max-w-4xl mx-auto @container/layout min-h-screen contain-inline-size">
-      <header className="flex items-center justify-between mb-8 gap-10">
+      <header className="flex items-center justify-between gap-10">
         <HeaderNavbar state={state} menus={menus} />
       </header>
       <Component />

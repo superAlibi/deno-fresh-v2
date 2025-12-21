@@ -2,7 +2,7 @@
     /* 设置滚动区域的锚点 */
     anchor-name: --x-container;
     scroll-marker-group: after;
-    /* scrollbar-width: none; */
+    scrollbar-width: none;
 
     container-name: snap-x-container;
 
@@ -30,6 +30,7 @@
         background-color: rgba(0, 0, 0, 0.1);
 
     }
+
     li::scroll-marker:hover {
         border: 1px solid blueviolet;
     }
@@ -43,7 +44,8 @@
         display: flex;
         gap: 1em;
         place-content: center;
-        /* margin-block-start: -2.5em; */
+        margin-block-start: -2.5em;
+        height: 1em;
     }
 
 
@@ -92,14 +94,14 @@
 
 .snap-x-container::scroll-button(inline-start) {
     content: "<" / "Scroll Left";
-    right: calc(anchor(left) + 1em);
+    right: calc(anchor(left) - 1.5em);
     border-radius: 50%;
 }
 
 .snap-x-container::scroll-button(inline-end) {
     content: ">" / "Scroll Right";
-    left: calc(anchor(right) + 1em);
-    bottom: calc(anchor(bottom));
+    left: calc(anchor(right) - 1.5em);
+    border-radius: 50%;
 
 }
 
