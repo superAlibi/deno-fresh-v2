@@ -19,7 +19,7 @@
 
 
     ::scroll-marker:target-current {
-        background: blueviolet;
+        background: blue;
     }
 
     &::scroll-marker-group {
@@ -27,7 +27,7 @@
         gap: 1em;
         place-content: center;
         margin-block-start: -2em;
-        height: 1em;
+        height: 1.5em;
     }
 
 

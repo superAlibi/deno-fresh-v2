@@ -3,7 +3,13 @@ import { define } from "tools/utils.ts";
 import { cn } from "tools/css.ts";
 
 import { images } from "data/static.ts";
-
+const 知识点 = [
+  "Scroll Buttons",
+  "Scroll Markers",
+  "Scroll Initial Target",
+  "Anchor",
+  "Full Bleed",
+];
 export default define.page(function Home() {
   return (
     <main
@@ -14,9 +20,36 @@ export default define.page(function Home() {
       <Head>
         <link rel="stylesheet" href={asset("/css/scroll-mark.css")} />
       </Head>
-      <h3 className="text-center text-2xl font-bold mb-4">
-        每次滚动, 都有一张图片在滚动区域的最中间
-      </h3>
+      <article
+        className={cn(
+          // 基本
+          "flex flex-col gap-4 text-center",
+          "",
+          // 平板或以上
+          "lg:max-w-[50cqi] lg:mx-auto ",
+        )}
+      >
+        <h3 className="text-center text-2xl font-bold">
+          水平滚动的卡片 & 标记
+        </h3>
+
+        <p className="flex gap-2 flex-wrap text-center justify-center">
+          {知识点.map((item) => (
+            <span
+              class={cn(
+                "bg-base-200 px-2 py-1 rounded-md text-content",
+                "whitespace-nowrap",
+              )}
+              key={item}
+            >
+              {item}
+            </span>
+          ))}
+        </p>
+        <h4>
+          滚动到当前卡片时, 卡片会有一个蓝色的标记
+        </h4>
+      </article>
       <ul
         class={cn(
           // 引用的css文件使用的class
