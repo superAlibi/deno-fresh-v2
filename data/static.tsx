@@ -79,6 +79,14 @@ export const menus: MenuItem[] = [
         label: "webrtc",
         href: "/webrtc",
       },
+      {
+        label: "动画时间线",
+        href: "/css/animatioin-timeline",
+      },
+      {
+        label: "时间线",
+        href: "/timeline",
+      },
     ],
   },
 
