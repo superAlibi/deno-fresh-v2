@@ -80,7 +80,7 @@ export const menus: MenuItem[] = [
         href: "/webrtc",
       },
       {
-        label: "动画时间线",
+        label: "滚动驱动动画",
         href: "/css/animatioin-timeline",
       },
       {

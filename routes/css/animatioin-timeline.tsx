@@ -17,14 +17,14 @@ export default define.page(function AnimationTimeline() {
         <h1>滚动时间线</h1>
         <div
           className={cn(
-            "overflow-y-auto size-[80cqi] mx-auto scroll-container",
+            "size-[80cqi] mx-auto overflow-hidden",
           )}
         >
           <ul
             className={cn(
-              "scroll-container relative",
-              "flex flex-col gap-2 h-full",
-              " flex flex-col gap-2 items-center mx-auto @container/list contain-inline-size ",
+              "scroll-container overflow-y-auto relative flex flex-col gap-2 h-full",
+              "flex flex-col gap-2 items-center mx-auto @container/list contain-inline-size ",
+              "snap-y snap-mandatory scroll-smooth",
             )}
           >
             {Array.from(meta).map((char, index) => (
@@ -32,6 +32,7 @@ export default define.page(function AnimationTimeline() {
                 key={index}
                 className={cn(
                   "size-[90cqi] bg-accent-content  flex items-center justify-center  shrink-0",
+                  "snap-center snap-always",
                 )}
               >
                 <h2 className={cn("text-4xl font-bold")}>{char}</h2>

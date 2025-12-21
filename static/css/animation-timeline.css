@@ -1,25 +1,32 @@
 @keyframes niprogress {
     from {
-        transform: scaleX(0);
+        width: 0%;
     }
 
     to {
-        transform: scaleX(1);
+        width: 100%;
     }
 }
 
-
+.scroll-container {
+    scroll-timeline: --scroll-container y;
+    position: relative;
+}
 
 .scroll-container::before {
-    display: inline-block;
     content: '';
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 10;
     height: 10px;
-    width: 100%;
+    width: 0%;
     background-color: #F44336;
-    animation: niprogress 1ms linear;
-    animation-timeline: scroll(nearest block);
-    transform-origin: 0 50%;
+    border-radius: 5px;
+    animation: niprogress linear;
+    animation-timeline: --scroll-container;
+    display: block;
+    flex-shrink: 0;
+    order: -1;
+    align-self: stretch;
 }
