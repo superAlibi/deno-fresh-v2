@@ -88,7 +88,7 @@ export default define.page(function cssScrollDefaultPage() {
                   "transition-all duration-300 opacity-100 translate-y-full",
                   "absolute left-0 right-0 bottom-0 p-4 pt-6",
                   // 背景
-                  "bg-linear-to-b from-transparent to-black/75",
+                  "bg-linear-to-b from-transparent dark:text-black/75 text-white/90 to-black/75",
                 )}
               >
                 <h5 className={cn("text-2xl font-bold")}>{image.label}</h5>
