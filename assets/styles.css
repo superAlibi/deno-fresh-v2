@@ -5,7 +5,7 @@
     navigation: auto;
 }
 
-/* 创建自定义动画 */
+/* 旧页面移除动画 */
 @keyframes move-out {
     from {
         transform: translateY(0%);
@@ -15,6 +15,7 @@
         transform: translateY(-100%);
     }
 }
+/* 新页面进入动画 */
 
 @keyframes move-in {
     from {

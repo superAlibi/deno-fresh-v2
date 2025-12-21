@@ -41,10 +41,12 @@
     }
 
     &::scroll-marker-group {
+        /* position-anchor: --x-container; */
+
         display: flex;
         gap: 1em;
         place-content: center;
-        margin-block-start: -2.5em;
+        /* margin-block-start: -2.5em; */
         height: 1.5em;
     }
 
@@ -68,6 +70,7 @@
     /* 设置滚动按钮的绝对定位 */
     /* 设置滚动按钮的锚点 */
     position: absolute;
+    z-index: 10;
     /* 设置滚动按钮的锚点 */
     position-anchor: --x-container;
     /* 设置滚动按钮的居中对齐 */
@@ -94,13 +97,15 @@
 
 .snap-x-container::scroll-button(inline-start) {
     content: "<" / "Scroll Left";
-    right: calc(anchor(left) - 1.5em);
+    inset-inline-start: anchor(start);
+    inset-block-start: anchor(self-end);
     border-radius: 50%;
 }
 
 .snap-x-container::scroll-button(inline-end) {
     content: ">" / "Scroll Right";
-    left: calc(anchor(right) - 1.5em);
+    inset-inline-end: anchor(end);
+    inset-block-start: anchor(self-end);
     border-radius: 50%;
 
 }

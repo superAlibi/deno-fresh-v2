@@ -7,7 +7,7 @@ const 知识点 = [
   "Scroll Buttons",
   "Scroll Markers",
   "Scroll Initial Target",
-  "Anchor",
+  "Anchor Position",
   "Full Bleed",
 ];
 export default define.page(function Home() {

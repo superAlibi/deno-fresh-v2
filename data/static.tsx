@@ -52,6 +52,10 @@ export const menus: MenuItem[] = [
         href: "/css/scroll-mark",
       },
       {
+        label: "锚点定位能力",
+        href: "/css/anchor-position",
+      },
+      {
         label: "滚动条",
         href: "/css/scroll-bar",
       },

@@ -8,14 +8,14 @@ const 知识点 = [
   "Scroll Markers",
   "Scroll-State Queries",
   "Scroll Initial Target",
-  "Anchor",
+  "Anchor Position",
   "Full Bleed",
 ];
 export default define.page(function cssScrollDefaultPage() {
   return (
     <main
       className={cn(
-        "max-w-[100cqi] overflow-hidden @container/main contain-inline-size",
+        "max-w-[100cqi] overflow-hidden  @container/main contain-inline-size",
       )}
     >
       <Head>
@@ -55,8 +55,8 @@ export default define.page(function cssScrollDefaultPage() {
         class={cn(
           // 引用的css文件使用的class
           "snap-x-container",
-          // 基本
-          "overflow-x-auto flex items-center gap-4 py-4 px-10 contain-size @container/list snap-x snap-mandatory scroll-smooth",
+          // 基本 设置滚动区域的锚点
+          "relative overflow-x-auto flex items-center gap-4 py-4 px-10 contain-size @container/list snap-x snap-mandatory scroll-smooth",
           // 移动端
           "size-[100cqi]",
           // 平板或以上
