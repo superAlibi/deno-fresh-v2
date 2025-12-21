@@ -1,2 +1,37 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@view-transition {
+    navigation: auto;
+}
+
+/* 创建自定义动画 */
+@keyframes move-out {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes move-in {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+/* 旧页面过渡动画 */
+::view-transition-old(root) {
+    animation: 0.4s ease-in both move-out;
+}
+
+/* 新页面过渡动画 */
+::view-transition-new(root) {
+    animation: 0.4s ease-in both move-in;
+}
