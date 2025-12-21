@@ -15,6 +15,7 @@ export default define.page(function AnimationTimeline() {
         )}
       >
         <h1>滚动时间线</h1>
+        <p>随着你的向下滚动, 滚动区域有一个红色的进度条 :)</p>
         <div
           className={cn(
             "size-[80cqi] mx-auto overflow-hidden",
@@ -40,6 +41,25 @@ export default define.page(function AnimationTimeline() {
             ))}
           </ul>
         </div>
+        <h3>参考资料</h3>
+        <p>
+          <a
+            class={cn("link")}
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations/Timelines"
+            target="_blank"
+          >
+            MDN Timelines
+          </a>
+        </p>
+        <p>
+          <a
+            class={cn("link")}
+            href="https://scroll-driven-animations.style/demos/cover-flow/css/"
+            target="_blank"
+          >
+            一些华丽的demo
+          </a>
+        </p>
       </main>
     </>
   );

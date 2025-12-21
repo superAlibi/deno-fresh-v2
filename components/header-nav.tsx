@@ -1,4 +1,4 @@
-import { FaGithub, FaSignOutAlt } from "react-icons/fa";
+import { FaSignOutAlt } from "react-icons/fa";
 import { State } from "tools/utils.ts";
 import { VNode } from "preact";
 export interface MenuItem {
@@ -40,7 +40,7 @@ function MenuItemComponent(props: MenuItem) {
 export function HeaderNavbar(props: HaderNavbarProps) {
   const { state, logo, menus, trigger } = props;
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm relative z-10">
       <div className="navbar-start">
         <div className="dropdown">
           {trigger ?? (
