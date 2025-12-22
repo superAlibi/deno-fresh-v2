@@ -1,38 +1,15 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@view-transition {
-    navigation: auto;
+/* @import "./view-transition.css"; */
+
+
+/* Give links pointing to the current page a green color */
+a[aria-current="page"] {
+    /* color: green; */
 }
 
-/* 旧页面移除动画 */
-@keyframes move-out {
-    from {
-        transform: translateY(0%);
-    }
-
-    to {
-        transform: translateY(-100%);
-    }
-}
-/* 新页面进入动画 */
-
-@keyframes move-in {
-    from {
-        transform: translateY(100%);
-    }
-
-    to {
-        transform: translateY(0%);
-    }
-}
-
-/* 旧页面过渡动画 */
-::view-transition-old(root) {
-    animation: 0.4s ease-in both move-out;
-}
-
-/* 新页面过渡动画 */
-::view-transition-new(root) {
-    animation: 0.4s ease-in both move-in;
+/* Color all ancestor links of the current page */
+a[aria-current="true"] {
+    /* color: peachpuff; */
 }

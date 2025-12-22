@@ -11,37 +11,45 @@ export default define.page(function AnchorPosition() {
       </Head>
       <main
         className={cn(
-          "anchor-position-container @container/main contain-inline-size",
+          "anchor-position-container @container/main contain-inline-size py-4",
         )}
       >
-        <h1>锚点定位能力</h1>
-        参考连接
-        <ul>
-          <li>
-            <a
-              class={cn("link t")}
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Anchor_positioning/Using"
-            >
-              使用锚点定位
-            </a>
-          </li>
-          <li>
-            <a
-              class={cn("link t")}
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Anchor_positioning/Try_options_hiding"
-            >
-              处理锚点元素边界溢出情况
-            </a>
-          </li>
-          <li>
-            <a
-              class={cn("link t")}
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/anchor"
-            >
-              anchor() 函数
-            </a>
-          </li>
-        </ul>
+        <details>
+          <summary className={cn("marker:text-primary cursor-pointer")}>
+            锚点定位能力
+          </summary>
+          <p>
+            锚点定位能力是CSS中的一种定位方式,
+            它可以让元素相对于其锚点位置进行定位.
+          </p>
+          <h3 className={cn("text-lg font-bold")}>参考连接</h3>
+          <ul>
+            <li>
+              <a
+                class={cn("link ")}
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Anchor_positioning/Using"
+              >
+                使用锚点定位 - MDN
+              </a>
+            </li>
+            <li>
+              <a
+                class={cn("link ")}
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Anchor_positioning/Try_options_hiding"
+              >
+                处理锚点元素边界溢出情况 - MDN
+              </a>
+            </li>
+            <li>
+              <a
+                class={cn("link ")}
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/anchor"
+              >
+                anchor() 函数 - MDN
+              </a>
+            </li>
+          </ul>
+        </details>
 
         <div className={cn("h-[80cqmin] flex items-center justify-center")}>
           <button type="button" className={cn("btn anchor-button w-24")}>

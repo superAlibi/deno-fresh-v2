@@ -14,25 +14,25 @@ export default define.page(function ScrollBar() {
           "contain-inline-size overflow-y-hidden",
         )}
       >
-        <h1>滚动条颜色 2025</h1>
+        <details>
+          <summary className={cn("marker:text-primary cursor-pointer")}>
+            滚动条颜色
+          </summary>
+          在 2025 年,常见浏览器已支持该属性
+        </details>
         <article
           className={cn(
-            "scroll-bar-container  overflow-y-auto h-[100cqi] bg-base-200",
+            "scroll-bar-container overflow-y-auto h-50 bg-base-200 relative",
           )}
         >
-          <pre>
-            {`
-  .scroll-bar-container {
-      scrollbar-width: thin;
-      scrollbar-color: blue blueviolet;
-  }
-            `}
-          </pre>
-          <p className="relative h-[300cqi] bg-base-300">
-            <span className="sticky top-0 left-0 bg-base-200">
-              这是很长的一段内容的容器
-            </span>
-          </p>
+          <div className=" h-[300cqi] bg-base-300 ">
+            <p className="sticky inset-x-0 top-0 bg-base-300">
+              这是很长的一段内容的容器, 你可以滚动一下
+            </p>
+            <p className={cn("sticky inset-x-0 top-0 sm:hidden bg-base-300")}>
+              在pc端,还有滚动条槽的颜色
+            </p>
+          </div>
         </article>
       </main>
     </>

@@ -48,8 +48,8 @@ export const menus: MenuItem[] = [
         href: "/css/start-nimation",
       },
       {
-        label: "滚动&锚点&容器粘贴状态",
-        href: "/css",
+        label: "滚动&容器粘贴状态",
+        href: "/css/scroll-container-snap-state",
       },
       {
         label: "滚动&锚点&标记",

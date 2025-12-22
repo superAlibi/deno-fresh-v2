@@ -10,9 +10,9 @@ export const handler = define.handlers({
     return ctx;
   },
 });
-export default define.page(function Home({ Component, state }) {
+export default define.page(function Home({ state }) {
   return (
-    <div class="px-4  flex flex-col max-w-4xl mx-auto  min-h-screen">
+    <main class="px-4  flex flex-col max-w-4xl mx-auto ">
       <Head>
         <title>首页-云逸尘的fresh项目</title>
       </Head>
@@ -35,11 +35,14 @@ export default define.page(function Home({ Component, state }) {
       <h3>css 相关</h3>
       <ul>
         <li>
-          <a class={cn("link text-blue-500")} href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference/At-rules/@view-transition">
+          <a
+            class={cn("link text-blue-500")}
+            href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference/At-rules/@view-transition"
+          >
             @view-transition
           </a>
         </li>
       </ul>
-    </div>
+    </main>
   );
 });

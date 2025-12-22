@@ -65,7 +65,7 @@ export function HeaderNavbar(props: HaderNavbarProps) {
               </svg>
             </div>
           )}
-          <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <ul className="menu menu-lg md:menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-audo p-2 shadow">
             {menus.map((menu) => (
               <MenuItemComponent
                 key={menu.label}
@@ -80,7 +80,7 @@ export function HeaderNavbar(props: HaderNavbarProps) {
           </a>
         )}
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center  hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {menus.map((menu) => (
             <MenuItemComponent
