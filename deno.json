@@ -24,6 +24,7 @@
     "tailwind-merge": "npm:tailwind-merge@^3.4.0",
     "tools/": "./tools/",
     "data/": "./data/",
+    "components/": "./components/",
     "islands/": "./islands/",
     "daisyui": "npm:daisyui@^5.5.14",
     "fresh": "jsr:@fresh/core@^2.2.0",

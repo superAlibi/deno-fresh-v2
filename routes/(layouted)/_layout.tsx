@@ -1,6 +1,6 @@
 import { define } from "tools/utils.ts";
 
-import { HeaderNavbar } from "../components/header-nav.tsx";
+import { HeaderNavbar } from "components/header-nav.tsx";
 import { menus } from "data/static.tsx";
 
 export default define.layout(function cssNavLayout({ Component, state }) {

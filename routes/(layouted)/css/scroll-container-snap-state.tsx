@@ -19,7 +19,10 @@ export default define.page(function cssScrollDefaultPage() {
       )}
     >
       <Head>
-        <link rel="stylesheet" href={asset("/css/index.css")} />
+        <link
+          rel="stylesheet"
+          href={asset("/css/scroll-container-snap-state")}
+        />
       </Head>
       <article
         className={cn(

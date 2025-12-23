@@ -32,7 +32,7 @@ function MenuItemComponent(props: MenuItem) {
   }
   return (
     <li>
-      <a href={href} className="whitespace-nowrap">{label}</a>
+      <a href={href} className="whitespace-nowrap aria-[current='page']:text-primary">{label}</a>
     </li>
   );
 }
