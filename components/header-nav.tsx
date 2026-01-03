@@ -1,6 +1,7 @@
 import { FaSignOutAlt } from "react-icons/fa";
 import { State } from "tools/utils.ts";
 import { VNode } from "preact";
+
 export interface MenuItem {
   label: string | VNode;
   href?: string;
@@ -16,6 +17,7 @@ export interface HaderNavbarProps {
 
 function MenuItemComponent(props: MenuItem) {
   const { label, href, children } = props;
+
   if (Array.isArray(children) && children.length) {
     return (
       <li>
@@ -32,7 +34,12 @@ function MenuItemComponent(props: MenuItem) {
   }
   return (
     <li>
-      <a href={href} className="whitespace-nowrap aria-[current='page']:text-primary">{label}</a>
+      <a
+        href={href}
+        className="whitespace-nowrap aria-[current='page']:text-primary"
+      >
+        {label}
+      </a>
     </li>
   );
 }
