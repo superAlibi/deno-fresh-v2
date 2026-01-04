@@ -52,7 +52,7 @@ export default define.page(function cssIndexPage() {
       {demos.map((demo) => (
         <li
           className={cn(
-            "h-[100cqi] @md/list:h-[30cqi] bg-base-200 px-2 py-1 rounded-md text-content text-center transition-all duration-300",
+            "h-[50cqi] @md/list:h-[30cqi] bg-base-200 px-2 py-1 rounded-md text-content text-center transition-all duration-300",
             "hover:bg-base-300 hover:scale-105",
             "group shadow-md shadow-primary-200 hover:shadow-lg hover:shadow-primary-300",
           )}

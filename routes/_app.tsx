@@ -2,7 +2,7 @@ import { define } from "tools/utils.ts";
 export default define.page(function App({ req, Component }) {
   
   return (
-    <html>
+    <html lang="zh-CN">
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
