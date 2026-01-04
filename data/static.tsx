@@ -41,55 +41,16 @@ export const images = [
  */
 export const menus: MenuItem[] = [
   {
+    label: "首页",
+    href: "/",
+    className: "lg:hidden",
+  },
+  {
     label: "案例",
     children: [
       {
-        label: "开始动画",
-        href: "/css/start-nimation",
-      },
-      {
-        label: "滚动&容器粘贴状态",
-        href: "/css/scroll-container-snap-state",
-      },
-      {
-        label: "滚动&锚点&标记",
-        href: "/css/scroll-mark",
-      },
-      {
-        label: "锚点定位能力",
-        href: "/css/anchor-position",
-      },
-      {
-        label: "最大内容动画",
-        href: "/css/max-content-animation",
-      },
-      {
-        label: "滚动条",
-        href: "/css/scroll-bar",
-      },
-      {
-        label: "加载/进度条",
-        href: "/css/progress",
-      },
-      {
-        label: "加载/进度条 - rgb",
-        href: "/css/progress-rgb",
-      },
-      {
-        label: "webrtc",
-        href: "/webrtc",
-      },
-      {
-        label: "动画时间线",
-        href: "/css/animatioin-timeline",
-      },
-      {
-        label: "时间线",
-        href: "/timeline",
-      },
-      {
-        label: "滚动驱动动画",
-        href: "/scroll-driven-animation",
+        label: "CSS",
+        href: "/css",
       },
     ],
   },

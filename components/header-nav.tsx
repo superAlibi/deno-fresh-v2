@@ -3,6 +3,7 @@ import { State } from "tools/utils.ts";
 import { VNode } from "preact";
 
 export interface MenuItem {
+  className?: string;
   label: string | VNode;
   href?: string;
   children?: MenuItem[];
@@ -16,7 +17,7 @@ export interface HaderNavbarProps {
 }
 
 function MenuItemComponent(props: MenuItem) {
-  const { label, href, children } = props;
+  const { label, href, children, className } = props;
 
   if (Array.isArray(children) && children.length) {
     return (
@@ -33,7 +34,7 @@ function MenuItemComponent(props: MenuItem) {
     );
   }
   return (
-    <li>
+    <li className={className}>
       <a
         href={href}
         className="whitespace-nowrap aria-[current='page']:text-primary"
