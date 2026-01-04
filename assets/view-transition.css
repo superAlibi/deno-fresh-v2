@@ -1,7 +1,3 @@
-@view-transition {
-    navigation: auto;
-}
-
 /* 旧页面移除动画 */
 @keyframes move-out {
     from {

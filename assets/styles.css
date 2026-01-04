@@ -1,4 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@import "./view-transition.css";
+/* @import "./view-transition.css"; */
+
+
+@view-transition {
+    navigation: auto;
+}
