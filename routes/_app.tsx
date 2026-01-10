@@ -1,6 +1,15 @@
 import { define } from "tools/utils.ts";
-export default define.page(function App({ req, Component }) {
-  
+
+export const handler = define.handlers({
+  GET(ctx) {
+    if (new URL(ctx.req.url).host.includes("remix.lucardo.website")) {
+      throw new Response("https://remix.luchador.dev", { status: 301 });
+    }
+    return ctx.next();
+  },
+});
+
+export default define.page(function App({ Component }) {
   return (
     <html lang="zh-CN">
       <head>
