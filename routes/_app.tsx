@@ -2,8 +2,8 @@ import { define } from "tools/utils.ts";
 
 export const handler = define.handlers({
   GET(ctx) {
-    if (new URL(ctx.req.url).host.includes("remix.lucardo.website")) {
-      throw new Response("https://remix.luchador.dev", { status: 301 });
+    if (new URL(ctx.req.url).host.includes("fresh.lucardo.website")) {
+      throw new Response("https://fresh.luchador.dev", { status: 301 });
     }
     return ctx.next();
   },
